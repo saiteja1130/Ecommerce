@@ -3,9 +3,9 @@ import cors from "cors";
 import express from "express";
 import fs from "fs";
 import { json } from "stream/consumers";
-
+require('dotenv').config();
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 app.use(express.json());
