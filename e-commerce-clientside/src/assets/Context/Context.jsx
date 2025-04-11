@@ -4,8 +4,8 @@ import axios from "axios";
 export const myContext = createContext();
 
 export const ContextProvider = ({ children }) => {
-  const URL = "http://localhost:5000/";
-  const PRODUCT_BASE_URL = "http://localhost:5000/product-list/";
+  const URL = "https://ecommerce-serverside-vn1z.onrender.com/";
+  const PRODUCT_BASE_URL = "https://ecommerce-serverside-vn1z.onrender.com/product-list/";
 
   // Initial state
   const [userLocalData, setUserLocalData] = useState({});
